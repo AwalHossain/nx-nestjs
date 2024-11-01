@@ -1,0 +1,26 @@
+{
+  "name": "restaurant-automation",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/restaurant-automation/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": ["build"],
+      "options": {
+        "buildTarget": "restaurant-automation:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "restaurant-automation:build:development"
+        },
+        "production": {
+          "buildTarget": "restaurant-automation:build:production"
+        }
+      }
+    }
+  }
+}
