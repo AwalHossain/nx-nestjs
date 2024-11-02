@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@restaurant-automation/auth": ["libs/auth/src/index.ts"],
+      "@restaurant-automation/core": ["libs/core/src/index.ts"],
+      "@restaurant-automation/database": ["libs/database/src/index.ts"],
+      "@restaurant-automation/modules": ["libs/modules/src/index.ts"],
+      "@restaurant-automation/shared": ["libs/shared/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
