@@ -6,7 +6,7 @@
     "start": "nx serve api",
     "build": "nx build api",
     "test": "nx test",
-    "lint": "nx lint",
+    "lint": "nx run-many --target=lint --all",
     "db:generate": "drizzle-kit generate:pg",
     "db:migrate": "drizzle-kit migrate:pg",
     "sonar": "sonar-scanner",
